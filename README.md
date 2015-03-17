@@ -1,6 +1,9 @@
 # Whitey
 
-A IntelliJ IDEA plugin that adds some nifty utilities for working with whitespace in source code. ## Developer's Guide
+A IntelliJ IDEA plugin that adds some nifty utilities for working with whitespace in source code.
+
+
+## Developer's Guide
 
 Run:
 
