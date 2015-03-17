@@ -1,0 +1,28 @@
+<idea-plugin version="2">
+    <id>se.trifork.intellij.whitey</id>
+    <name>Whitey</name>
+    <version>1.0</version>
+    <vendor email="stockholm@trifork.com" url="http://trifork.se/">Trifork AB</vendor>
+
+    <description><![CDATA[
+      Neat tools for working with whitespace.
+    ]]></description>
+
+    <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="139"/>
+
+
+
+    <actions>
+        <group id="WhiteyMenu" text="_Whitespace" description="Actions that deal with whitespece in the editor.">
+            <add-to-group group-id="EditMenu" anchor="last"/>
+            <action id="Whitey.RemoveAll" class="se.trifork.intellij.whitey.RemoveWhitespaceAction"
+                    text="Remove Adjacent"
+                    description="Removes all adjacent whitespace."/>
+            <action id="Whitey.RemoveAllButOne" class="se.trifork.intellij.whitey.RemoveButOneWhitespaceAction"
+                    text="Remove Adjacent Except One"
+                    description="Removes all but one adjacent whitespace leaving one space character."/>
+        </group>
+    </actions>
+
+</idea-plugin>
